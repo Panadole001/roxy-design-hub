@@ -3,38 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roxy Design Hub • Daily Drops</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Roxy Design Hub - Daily Style Drop</title>
+    <!-- We are using water.css, a simple, elegant style sheet, for instant looks -->
+    <link rel="stylesheet" href="https://unpkg.com/water.css/dist/dark.min.css">
 </head>
-
 <body>
-<header>
-    <h1>Roxy Design Hub</h1>
-    <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="archive.html">Archive</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    
+    <header>
+        <h1>ROXY DESIGN HUB</h1>
+        <p>Your Daily Source for Fresh, Brand-New Style Mockups.</p>
+        <nav>
+            <a href="#today">Today's Drop</a>
+            <a href="#membership">Unlock Access</a>
+        </nav>
+    </header>
 
-<section class="hero">
-    <h2>Today’s New Drops</h2>
-    <p>Fresh daily designs — updated every 24 hours.</p>
-</section>
+    <main>
+        
+        <!-- ============================================= -->
+        <!-- SECTION 1: TODAY'S DROP (Content Goes Here) -->
+        <!-- ============================================= -->
+        <section id="today">
+            <!-- IMPORTANT: Change the date every day you update! -->
+            <h2>🔥 Today's Drop - 2 December 2025 🔥</h2> 
+            <p>New designs are posted daily. Click the 'Buy Digital File' button to get the commercial-use graphic!</p>
+            
+            <div class="design-grid">
+                <!-- DESIGN ITEM 1: YOUR FIRST MOCKUP -->
+                <div class="design-item">
+                    
+                    <!-- 1. IMAGE SOURCE (src): 
+                         - Using the direct image link from ImgBB. 
+                         - The URL has been slightly adjusted to the direct image file, not the ImgBB page. -->
+                    <img src="https://i.ibb.co/gZPVPKG/1.png" alt="Geometric Graphic T-shirt Design">
+                    
+                    <h3>The 'Wanderer' Tee</h3>
+                    <p>A minimalist, geometric design ideal for modern streetwear brands. Includes PNG and SVG files.</p>
+                    
+                    <!-- 2. PURCHASE LINK (href): 
+                         - Your direct Payhip link is placed here. -->
+                    <a href="https://payhip.com/b/8CQtK" target="_blank" class="button">Buy Digital File ($5)</a> 
+                </div>
 
-<section class="grid">
-    <!-- ====== COPY THIS BLOCK EACH DAY ====== -->
-    <div class="item">
-        <img src="YOUR_IMAGE_URL_HERE" alt="Daily Drop">
-        <a class="buy-btn" href="YOUR_PAYHIP_OR_KOFI_LINK" target="_blank">Get This Design</a>
-    </div>
-    <!-- ====== END BLOCK ====== -->
-</section>
+                <!-- (This is where you will add your second and third design items tomorrow) -->
+            </div>
+        </section>
 
-<footer>
-    <p>© 2025 Roxy Design Hub — All rights reserved.</p>
-</footer>
+        <!-- ============================================= -->
+        <!-- SECTION 2: MEMBERSHIP/MONETIZATION -->
+        <!-- ============================================= -->
+        <section id="membership">
+            <h2>Unlock Full Access & All Past Designs</h2>
+             <p>Support the hub and gain access to an exclusive archive of all past drops for a low monthly price!</p>
+             <!-- Use your Payhip link again, or a separate membership link if you create one -->
+             <a href="https://payhip.com/b/8CQtK" target="_blank" class="button primary">View All Shop Items</a>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Roxy Design Hub. All Rights Reserved. Follow us on <a href="#LINK_TO_YOUR_INSTAGRAM">Instagram</a></p>
+    </footer>
+
+    <!-- CSS STYLES FOR LAYOUT -->
+    <style>
+        .design-grid {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center;
+        }
+        .design-item {
+            width: 300px; 
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        .design-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #3B5998; /* A nice blue color */
+            color: white; 
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .primary {
+            background-color: #008000; /* Green for the primary call-to-action */
+        }
+    </style>
 </body>
 </html>
-
